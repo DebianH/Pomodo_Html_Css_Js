@@ -5,8 +5,5 @@ Html, Css, Bootstrap y Js
 Además he agregado un sonido de inicio y uno al final, incluso visualmente
 al terminar puedes ver un texto animado.
 <center>
-![Screenshot](/img/Inicio.jpg)
-</center>
-<center>
 ![Screenshot](/img/End.JPG)
 </center>
