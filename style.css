@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body {
+	background: #F2994A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+}
+.heading {
+	color: #fff;
+
+}
+.row{
+	width: 100%;
+}
+.timer{
+	text-align: center;
+	width: 15rem;
+	height: 15rem;
+	border: 5px solid #fff;
+	border-radius: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.fa-play-circle {
+	color: #fff;
+	border: 2px solid transparent;
+	padding: 1rem;
+	border-radius: 3rem;
+	font-size: 40px;	
+} 
+.fa-redo-alt {
+	color: #fff;
+	border: 2px solid transparent;
+	padding: 1rem;
+	border-radius: 3rem;
+	font-size: 30px;	
+} 
+.fa-play-circle:hover, 
+.fa-redo-alt:hover{
+	color: #e3f6f5;
+	border: 2px solid #bae8e8;
+	transition: 0.3s ease;
+	outline: none;
+}
+.btn {
+	color: transparent;
+	outline: none;
+}
+.mensaje{
+	position: relative;
+	font-size: 14vw;
+	color: #e27802;
+	font-family: 'Righteous', cursive;
+	-webkit-text-stroke: 1px #c0c0c0;
+	text-transform: uppercase;
+}
+.mensaje::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #fff;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #fff;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate {
+	5%,10%,100% {
+		width: 0;
+	}
+	70%,90% {
+		width: 100%;
+	}
+}
